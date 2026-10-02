@@ -1,0 +1,17 @@
+{
+  "name": "unspotted",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "vite build && node scripts/service-worker.mjs",
+    "preview": "vite preview --host 127.0.0.1",
+    "test": "node --test tests/*.test.js",
+    "test:e2e": "node tests/build.mjs && playwright test"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.56.0",
+    "vite": "^7.1.0"
+  }
+}
